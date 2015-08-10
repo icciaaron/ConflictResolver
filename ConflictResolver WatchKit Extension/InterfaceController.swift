@@ -13,12 +13,18 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var actionImage: WKInterfaceImage!
-    override init(context: AnyObject?) {
-        // Initialize variables here.
-        super.init(context: context)
+    
+    override init (){
+        super.init()
         
         // Configure interface objects here.
         NSLog("%@ init", self)
+    }
+    
+    override func awakeWithContext(context: AnyObject?) {
+        // Initialize variables here.
+        super.awakeWithContext(context)
+
     }
 
     override func willActivate() {
@@ -51,7 +57,7 @@ class InterfaceController: WKInterfaceController {
             repeatCount: 3)
         
         delay(0.9) {
-            var imageNumber = arc4random_uniform(3)
+            let imageNumber = arc4random_uniform(3)
             self.actionImage.setImageNamed("action\(imageNumber)")
         }
     }

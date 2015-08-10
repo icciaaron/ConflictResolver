@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936718EA1B784C9200BA426B /* ConflictResolver WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEFACF261A25EF3400044746 /* ConflictResolver WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		936718ED1B784C9200BA426B /* ConflictResolver Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEFACF331A25EF3400044746 /* ConflictResolver Watch App.app */; };
 		CEFACF031A25EE3400044746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFACF021A25EE3400044746 /* AppDelegate.swift */; };
 		CEFACF051A25EE3400044746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFACF041A25EE3400044746 /* ViewController.swift */; };
 		CEFACF081A25EE3400044746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFACF061A25EE3400044746 /* Main.storyboard */; };
@@ -16,13 +18,25 @@
 		CEFACF291A25EF3400044746 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFACF281A25EF3400044746 /* WatchKit.framework */; };
 		CEFACF2E1A25EF3400044746 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFACF2D1A25EF3400044746 /* InterfaceController.swift */; };
 		CEFACF301A25EF3400044746 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFACF2F1A25EF3400044746 /* Images.xcassets */; };
-		CEFACF341A25EF3400044746 /* ConflictResolver Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = CEFACF331A25EF3400044746 /* ConflictResolver Watch App.app */; };
 		CEFACF3B1A25EF3400044746 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFACF3A1A25EF3400044746 /* Interface.storyboard */; };
 		CEFACF3D1A25EF3400044746 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFACF3C1A25EF3400044746 /* Images.xcassets */; };
-		CEFACF401A25EF3400044746 /* ConflictResolver WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEFACF261A25EF3400044746 /* ConflictResolver WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		936718E81B784C9200BA426B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFACEF51A25EE3400044746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFACF251A25EF3400044746;
+			remoteInfo = "ConflictResolver WatchKit Extension";
+		};
+		936718EB1B784C9200BA426B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFACEF51A25EE3400044746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFACF321A25EF3400044746;
+			remoteInfo = "ConflictResolver Watch App";
+		};
 		CEFACF131A25EE3400044746 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEFACEF51A25EE3400044746 /* Project object */;
@@ -30,32 +44,29 @@
 			remoteGlobalIDString = CEFACEFC1A25EE3400044746;
 			remoteInfo = ConflictResolver;
 		};
-		CEFACF351A25EF3400044746 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEFACEF51A25EE3400044746 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEFACF321A25EF3400044746;
-			remoteInfo = "ConflictResolver Watch App";
-		};
-		CEFACF3E1A25EF3400044746 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEFACEF51A25EE3400044746 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEFACF251A25EF3400044746;
-			remoteInfo = "ConflictResolver WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CEFACF471A25EF3400044746 /* Embed App Extensions */ = {
+		936718EE1B784C9200BA426B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				CEFACF401A25EF3400044746 /* ConflictResolver WatchKit Extension.appex in Embed App Extensions */,
+				936718EA1B784C9200BA426B /* ConflictResolver WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936718EF1B784C9200BA426B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				936718ED1B784C9200BA426B /* ConflictResolver Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -223,12 +234,12 @@
 				CEFACEF91A25EE3400044746 /* Sources */,
 				CEFACEFA1A25EE3400044746 /* Frameworks */,
 				CEFACEFB1A25EE3400044746 /* Resources */,
-				CEFACF471A25EF3400044746 /* Embed App Extensions */,
+				936718EF1B784C9200BA426B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CEFACF3F1A25EF3400044746 /* PBXTargetDependency */,
+				936718EC1B784C9200BA426B /* PBXTargetDependency */,
 			);
 			name = ConflictResolver;
 			productName = ConflictResolver;
@@ -264,27 +275,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				CEFACF361A25EF3400044746 /* PBXTargetDependency */,
 			);
 			name = "ConflictResolver WatchKit Extension";
 			productName = "ConflictResolver WatchKit Extension";
 			productReference = CEFACF261A25EF3400044746 /* ConflictResolver WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		CEFACF321A25EF3400044746 /* ConflictResolver Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEFACF411A25EF3400044746 /* Build configuration list for PBXNativeTarget "ConflictResolver Watch App" */;
 			buildPhases = (
 				CEFACF311A25EF3400044746 /* Resources */,
+				936718EE1B784C9200BA426B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				936718E91B784C9200BA426B /* PBXTargetDependency */,
 			);
 			name = "ConflictResolver Watch App";
 			productName = "ConflictResolver Watch App";
 			productReference = CEFACF331A25EF3400044746 /* ConflictResolver Watch App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -292,7 +304,7 @@
 		CEFACEF51A25EE3400044746 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jake Lin";
 				TargetAttributes = {
 					CEFACEFC1A25EE3400044746 = {
@@ -354,7 +366,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFACF301A25EF3400044746 /* Images.xcassets in Resources */,
-				CEFACF341A25EF3400044746 /* ConflictResolver Watch App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,20 +409,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		936718E91B784C9200BA426B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFACF251A25EF3400044746 /* ConflictResolver WatchKit Extension */;
+			targetProxy = 936718E81B784C9200BA426B /* PBXContainerItemProxy */;
+		};
+		936718EC1B784C9200BA426B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFACF321A25EF3400044746 /* ConflictResolver Watch App */;
+			targetProxy = 936718EB1B784C9200BA426B /* PBXContainerItemProxy */;
+		};
 		CEFACF141A25EE3400044746 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEFACEFC1A25EE3400044746 /* ConflictResolver */;
 			targetProxy = CEFACF131A25EE3400044746 /* PBXContainerItemProxy */;
-		};
-		CEFACF361A25EF3400044746 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEFACF321A25EF3400044746 /* ConflictResolver Watch App */;
-			targetProxy = CEFACF351A25EF3400044746 /* PBXContainerItemProxy */;
-		};
-		CEFACF3F1A25EF3400044746 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEFACF251A25EF3400044746 /* ConflictResolver WatchKit Extension */;
-			targetProxy = CEFACF3E1A25EF3400044746 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -455,6 +466,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -519,6 +531,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ConflictResolver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -530,6 +543,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ConflictResolver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -548,6 +562,7 @@
 				);
 				INFOPLIST_FILE = ConflictResolverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConflictResolver.app/ConflictResolver";
 			};
@@ -563,6 +578,7 @@
 				);
 				INFOPLIST_FILE = ConflictResolverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConflictResolver.app/ConflictResolver";
 			};
@@ -573,16 +589,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				IBSC_MODULE = ConflictResolver_WatchKit_Extension;
 				INFOPLIST_FILE = "ConflictResolver Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushjet.ConflictResolver.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -591,12 +610,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ConflictResolver_WatchKit_Extension;
 				INFOPLIST_FILE = "ConflictResolver Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushjet.ConflictResolver.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -609,8 +631,12 @@
 				);
 				INFOPLIST_FILE = "ConflictResolver WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushjet.ConflictResolver.watchapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -619,8 +645,12 @@
 			buildSettings = {
 				INFOPLIST_FILE = "ConflictResolver WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushjet.ConflictResolver.watchapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -643,6 +673,7 @@
 				CEFACF1E1A25EE3400044746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFACF1F1A25EE3400044746 /* Build configuration list for PBXNativeTarget "ConflictResolverTests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +682,7 @@
 				CEFACF211A25EE3400044746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFACF411A25EF3400044746 /* Build configuration list for PBXNativeTarget "ConflictResolver Watch App" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +691,7 @@
 				CEFACF431A25EF3400044746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFACF441A25EF3400044746 /* Build configuration list for PBXNativeTarget "ConflictResolver WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +700,7 @@
 				CEFACF461A25EF3400044746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
